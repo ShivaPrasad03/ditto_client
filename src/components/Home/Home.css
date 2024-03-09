@@ -92,6 +92,7 @@ nav div {
   align-items: center;
   border-radius: 50%;
   height: 60px;
+  animation: moment 2s ease-in-out infinite;
   
 }
 .circular-path div p {
