@@ -16,8 +16,10 @@ export default function Home() {
         <nav>
           <img className="logo-image" src={logo} alt="logo" />
           <div>
-            <button className="login-btn btn-1" onClick={()=>navigate('/login')}>Login</button>
-            <button className="signup-btn btn-1"  onClick={()=>navigate('/signup')}>SignUp</button>
+            <button className="login-btn btn-1" onClick={()=>navigate('/login', {state
+            :1})}>Login</button>
+            <button className="signup-btn btn-1"  onClick={()=>navigate('/signup', {state
+            :2})}>SignUp</button>
           </div>
         </nav>
         <div className="intro-cont">

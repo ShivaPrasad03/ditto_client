@@ -3,10 +3,9 @@
 .signup-container{
   min-height: 100vh;
   background: linear-gradient(to right, rgba(0, 38, 95, 1), rgb(87, 151, 240,1),rgba(0, 38, 95, 1));
-
   display: grid;
-
   place-items: center;
+  padding: 20px 0px;
 }
 .logo-image {
   width: 80px;
@@ -17,7 +16,6 @@
   width: 90vw;
   text-align: left;
   max-width: 330px;
-  max-height: 400px;
   box-shadow: 0 0 10px rgb(96, 138, 216);
   border-radius: 10px;
   background: white;
@@ -113,5 +111,5 @@
   border: 0;
   background-color: #005bea;
   color: #ffff;
-  color: black;
+
 }
