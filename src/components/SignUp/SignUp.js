@@ -9,7 +9,7 @@ import './SignUp.css'
 
 export default function SignUp() {
 const [bool, setBool]=useState(1)
-const title = ["Welcome Back", "Hey! Ditto"]
+const title = ["Welcome To Ditto", "Hey! Ditto"]
 
 const boolFun=()=>{
     if(bool===0){
@@ -31,7 +31,7 @@ return <div className="signup-container">
 <p onClick={boolFun} className={`${bool===0?"active-tab":""} tab-btn`}>Login</p> 
 <p onClick={boolFun} className={`${bool===1? "active-tab":""} tab-btn`}>SignUp</p>
 </div>
-    <h1 className="title">{bool===0?title[0]:title[1]} {bool===0?<FaRegFaceSmileBeam/> :<FaRegSmileWink/>} </h1>
+    <h1 className="title">{bool===0?title[1]:title[0]} {bool===0?<FaRegFaceSmileBeam/> :<FaRegSmileWink/>} </h1>
 
     <div className="email input-cont">
         <label htmlFor="email">Email</label>
