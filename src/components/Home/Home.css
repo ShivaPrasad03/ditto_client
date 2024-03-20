@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+ 
 }
 
 .Home-container {
@@ -45,12 +44,14 @@ nav div {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: #005bea;
   transition-duration: 0.5s;
 }
-
-
-.btn-1:hover {
+.login-btn{
+  color: #005bea;
+  background-color: white;
+ 
+}
+.signup-btn{
   background-color: #005bea;
   color: white;
 }
