@@ -2,7 +2,7 @@
 
 
 .signup-container{
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(to right, rgba(0, 38, 95, 1), rgb(87, 151, 240,1),rgba(0, 38, 95, 1));
   
     display: grid;
