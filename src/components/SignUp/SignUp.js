@@ -1,6 +1,6 @@
 import { FaRegSmileWink } from "react-icons/fa";
 import { FaRegFaceSmileBeam } from "react-icons/fa6";
-import { Mail,Lock } from 'lucide-react';
+import { Mail,Lock,UserRound } from 'lucide-react';
 import logo from './Asset_1.svg'
 import { useState,useEffect } from 'react'
 import { useLocation } from "react-router-dom";
@@ -67,26 +67,26 @@ return <div className="signup-container">
 <p onClick={boolFun} className={`${bool===1?"active-tab":""} tab-btn`}>Login</p> 
 <p onClick={boolFun} className={`${bool===2? "active-tab":""} tab-btn`}>SignUp</p>
 </div>
-    <h1 className="title">{bool===1?title[1]:title[0]} {bool===0?<FaRegFaceSmileBeam/> :<FaRegSmileWink/>} </h1>
+    <h1 className="title">{bool===1?title[1]:title[0]} {bool===2?<FaRegFaceSmileBeam/> :<FaRegSmileWink/>} </h1>
 
     <div className={`input-cont ${bool===1?"disable":''}`}>
         <label htmlFor="username">Username</label>
-        <input id="username" type="email" onChange={usernameChange} value={details.username}/>
-        <Mail className="icon" size={16} color="#005bea"/>
+        <input id="username" type="email" onChange={usernameChange} value={details.username} placeholder="username"/>
+        <UserRound className="icon" size={16} color="#005bea"/>
     </div>
     <div className="email input-cont">
         <label htmlFor="email">Email</label>
-        <input id="email" type="email" onChange={emailChange} value={details.email}/>
+        <input id="email" type="email" onChange={emailChange} value={details.email} placeholder="email"/>
         <Mail className="icon" size={16} color="#005bea"/>
     </div>
     <div className="password input-cont">
         <label htmlFor="password">Password</label>
-        <input id="password" type="password"  onChange={passwordChange} value={details.password}/>
+        <input id="password" type="password"  onChange={passwordChange} value={details.password} placeholder="password"/>
         <Lock className="icon" size={16} color="#005bea"/>
     </div>
     <div className={`input-cont ${bool===1?"disable":''}`}>
         <label htmlFor="confirm password">Confirm Password</label>
-        <input id="confirm password" type="password"  onChange={confirmPasswordChange} value={details.confirmPassword}/>
+        <input id="confirm password" type="password"  onChange={confirmPasswordChange} value={details.confirmPassword} placeholder="confirm password"/>
     </div>
     <div style={{display:"flex", justifyContent:"space-between"}}>
 
