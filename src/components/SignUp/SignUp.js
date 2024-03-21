@@ -51,9 +51,20 @@ const onSubmit=async()=>{
             },
             body: JSON.stringify({username,email, password})
         }
-console.log(options.body)
-        // const res = await fetch("http://localhost:3001/signup",options)
-        // const data = res.json()
+
+        if(bool===1){
+            const res = await fetch("http://localhost:3001/login",options)
+            const data = await res.json()
+            console.log(data)
+           
+        }
+        else{
+            const res = await fetch("http://localhost:3001/signup",options)
+            const data = await res.json()
+            console.log(data)
+        }
+      
+        
     }
 }
   
