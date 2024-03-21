@@ -53,13 +53,12 @@ const onSubmit=async()=>{
         }
 
         if(bool===1){
-            const res = await fetch("http://localhost:3001/login",options)
+            const res = await fetch("https://ditto-server.onrender.com/login",options)
             const data = await res.json()
             console.log(data)
-           
         }
         else{
-            const res = await fetch("http://localhost:3001/signup",options)
+            const res = await fetch("https://ditto-server.onrender.com/signup",options)
             const data = await res.json()
             console.log(data)
         }
