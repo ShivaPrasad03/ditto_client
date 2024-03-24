@@ -1,11 +1,13 @@
 import { FaRegSmileWink } from "react-icons/fa";
 import { FaRegFaceSmileBeam } from "react-icons/fa6";
-import { Mail, Lock, UserRound, Replace } from "lucide-react";
+import { Mail, Lock, UserRound } from "lucide-react";
 import { HashLoader } from "react-spinners";
 import { useNavigate } from "react-router-dom";
 import logo from "./Asset_1.svg";
 import { useState, useEffect } from "react";
+import Cookies from "js-cookie";
 import { useLocation } from "react-router-dom";
+
 import "./SignUp.css";
 
 export default function SignUp() {
@@ -65,8 +67,10 @@ export default function SignUp() {
         );
         const data = await res.json();
         console.log(data);
+        const {token} = data
         setLoader(false);
         if (res.status === 200) {
+          Cookies.set("token", token, { expires: 30});
           navigate("/feed", { replace: true });
         }
       } else {
@@ -78,7 +82,7 @@ export default function SignUp() {
         console.log(data);
         setLoader(false);
         if (res.status === 200) {
-          navigate("/feed", { replace: true });
+          navigate("/login", { replace: true });
         }
       }
     }
