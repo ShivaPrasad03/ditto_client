@@ -69,7 +69,6 @@ export default function SignUp() {
         );
         // const res = await fetch("http://localhost:3001/login", options);
         const data = await res.json();
-        console.log(data);
         const { token } = data;
 
         setLoader(false);
@@ -86,7 +85,7 @@ export default function SignUp() {
           options
         );
         const data = await res.json();
-        console.log(data);
+
         setLoader(false);
         if (res.status === 200) {
           navigate("/login", { replace: true });
