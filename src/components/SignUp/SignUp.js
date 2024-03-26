@@ -12,6 +12,7 @@ import "./SignUp.css";
 
 export default function SignUp() {
   const navigate = useNavigate();
+
   const [error, setError] = useState("");
   const [loader, setLoader] = useState(false);
   const [details, setDetails] = useState({
@@ -56,6 +57,7 @@ export default function SignUp() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          Accept: "application/json",
         },
         body: JSON.stringify({ username, email, password }),
       };
@@ -65,13 +67,18 @@ export default function SignUp() {
           "https://ditto-server.onrender.com/login",
           options
         );
+        // const res = await fetch("http://localhost:3001/login", options);
         const data = await res.json();
         console.log(data);
-        const {token} = data
+        const { token } = data;
+
         setLoader(false);
         if (res.status === 200) {
-          Cookies.set("token", token, { expires: 30});
+          setError("");
+          Cookies.set("token", token, { expires: 30 });
           navigate("/feed", { replace: true });
+        } else {
+          setError(data.message);
         }
       } else {
         const res = await fetch(
@@ -174,6 +181,16 @@ export default function SignUp() {
           <button className="submit" onClick={onSubmit}>
             Submit
           </button>
+          <p
+            style={{
+              fontSize: "10px",
+              color: "red",
+              textAlign: "center",
+              fontWeight: "bold",
+            }}
+          >
+            {error}
+          </p>
           {loader && (
             <div className="loader">
               <HashLoader color="#005bea" />

@@ -2,11 +2,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Main from "./components/Main/Main";
 import SignUp from "./components/SignUp/SignUp";
-import ProtectedRoute from "./components/Protected-Route/Protected";
+import ProtectedRoute from "./utils/Protected-Route/Protected";
 
 import "./App.css";
 
 function App() {
+  
   return (
     <BrowserRouter>
       <Routes>

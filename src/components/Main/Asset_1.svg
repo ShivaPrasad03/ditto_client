@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 156 131">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-6 {
+        fill: #f4f6fc;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" width="156" height="131"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <path class="cls-2" d="m139.03,31.95c-10.5-10.49-25.03-16.95-41.05-16.95h-28.5c-1.06-6-7.23-10.24-13.98-8.05-4.15,1.35-6.83,5.34-6.88,9.7-.01.89.05,1.69.25,2.5l-23.35,9.94-12.55-5.59c0-.25.06-.56.06-.81,0-4.12-3.78-7.3-7.97-6.43C2.53,16.78.5,18.83,0,21.37c-.82,4.17,2.35,7.91,6.45,7.91,1.12,0,2.18-.31,3.11-.81l18.44,18.44v84.08h69.98c16.02,0,30.55-6.52,41.05-17.02,10.5-10.5,16.95-24.96,16.95-40.99s-6.46-30.55-16.95-41.05ZM11.86,3.73c1.06,0,1.86-.81,1.86-1.86s-.81-1.86-1.86-1.86c-.99,0-1.86.81-1.86,1.86s.87,1.86,1.86,1.86Zm9.51,14.17c2.55,0,4.54-2.05,4.54-4.54s-1.99-4.54-4.54-4.54-4.54,1.99-4.54,4.54,2.05,4.54,4.54,4.54Zm18.27-4.29c0-1.55-1.3-2.86-2.86-2.86s-2.86,1.31-2.86,2.86,1.31,2.86,2.86,2.86,2.86-1.31,2.86-2.86Zm17.35,13.52v15.34l-12-5.31v-.54c0-.9-.24-1.73-.6-2.45l8.66-8.66c1.14.78,2.51,1.38,3.94,1.62Zm9.22-2.77l26.04,19.64h-31.27v-17.03c1.99-.38,3.79-1.31,5.22-2.61Zm-2.21-4.1l-.06.06c-1.12,1.55-2.98,2.55-5.1,2.55-1.74,0-3.35-.74-4.47-1.86-1.18-1.18-1.86-2.73-1.86-4.54,0-3.48,2.86-6.34,6.34-6.34s6.41,2.86,6.41,6.34c0,1.43-.5,2.73-1.24,3.79Zm-13.92,2.05l.13.19-9.02,8.95c-.81-.38-1.68-.56-2.61-.56-1.68,0-3.23.68-4.29,1.86l-4.35-1.93,20.14-8.52Zm-7.13,18.46l14.04,6.21v23.43l-24.67-24.68,3.73-3.73c.74.38,1.61.63,2.55.63,1.74,0,3.23-.75,4.35-1.86Zm-6.66-4.4c.14-1.09,1.07-1.97,2.16-2.05.78-.06,1.49.19,1.97.67.5.43.75,1.06.75,1.74,0,.38-.06.68-.19.99v.06c-.44.87-1.31,1.43-2.3,1.43-.68,0-1.3-.24-1.74-.74-.51-.51-.76-1.28-.66-2.1Zm-3.3.36c0,.93.18,1.8.56,2.61l-3.73,3.73-14.79-14.85,17.96,8.02v.5Zm28,11.27h37.05c6.91,0,13.14,2.8,17.68,7.35,4.55,4.48,7.35,10.78,7.35,17.68s-2.8,13.14-7.35,17.68c-4.54,4.48-10.77,7.28-17.68,7.28h-37.05v-50Z"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="3734.82" y1="11080.13" x2="4919.21" y2="8388.94" gradientTransform="translate(-190.93 670.51) scale(.06 -.06)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#12229d"/>
+      <stop offset=".25" stop-color="#12229d"/>
+      <stop offset=".26" stop-color="#12229d"/>
+      <stop offset=".26" stop-color="#12229e"/>
+      <stop offset=".27" stop-color="#12229f"/>
+      <stop offset=".27" stop-color="#1323a0"/>
+      <stop offset=".27" stop-color="#1323a2"/>
+      <stop offset=".28" stop-color="#1324a3"/>
+      <stop offset=".28" stop-color="#1324a5"/>
+      <stop offset=".29" stop-color="#1424a6"/>
+      <stop offset=".29" stop-color="#1425a8"/>
+      <stop offset=".29" stop-color="#1425a9"/>
+      <stop offset=".3" stop-color="#1426aa"/>
+      <stop offset=".3" stop-color="#1526ac"/>
+      <stop offset=".3" stop-color="#1526ad"/>
+      <stop offset=".31" stop-color="#1527af"/>
+      <stop offset=".31" stop-color="#1527b0"/>
+      <stop offset=".32" stop-color="#1628b2"/>
+      <stop offset=".32" stop-color="#1628b3"/>
+      <stop offset=".32" stop-color="#1628b4"/>
+      <stop offset=".33" stop-color="#1629b6"/>
+      <stop offset=".33" stop-color="#1729b7"/>
+      <stop offset=".34" stop-color="#172ab9"/>
+      <stop offset=".34" stop-color="#172aba"/>
+      <stop offset=".34" stop-color="#172abb"/>
+      <stop offset=".35" stop-color="#182bbd"/>
+      <stop offset=".35" stop-color="#182bbe"/>
+      <stop offset=".36" stop-color="#182bc0"/>
+      <stop offset=".36" stop-color="#182cc1"/>
+      <stop offset=".36" stop-color="#192cc3"/>
+      <stop offset=".37" stop-color="#192dc4"/>
+      <stop offset=".37" stop-color="#192dc5"/>
+      <stop offset=".38" stop-color="#192dc7"/>
+      <stop offset=".38" stop-color="#1a2ec8"/>
+      <stop offset=".38" stop-color="#1a2eca"/>
+      <stop offset=".39" stop-color="#1a2fcb"/>
+      <stop offset=".39" stop-color="#1a2fcd"/>
+      <stop offset=".39" stop-color="#1a2fce"/>
+      <stop offset=".4" stop-color="#1b30cf"/>
+      <stop offset=".4" stop-color="#1b30d1"/>
+      <stop offset=".41" stop-color="#1b31d2"/>
+      <stop offset=".41" stop-color="#1b31d4"/>
+      <stop offset=".41" stop-color="#1c31d5"/>
+      <stop offset=".42" stop-color="#1c32d6"/>
+      <stop offset=".42" stop-color="#1c32d8"/>
+      <stop offset=".43" stop-color="#1c33d9"/>
+      <stop offset=".43" stop-color="#1d33db"/>
+      <stop offset=".43" stop-color="#1d33dc"/>
+      <stop offset=".44" stop-color="#1d34de"/>
+      <stop offset=".44" stop-color="#1d34df"/>
+      <stop offset=".45" stop-color="#1e34e0"/>
+      <stop offset=".45" stop-color="#1e35e2"/>
+      <stop offset=".45" stop-color="#1e35e3"/>
+      <stop offset=".46" stop-color="#1e36e5"/>
+      <stop offset=".46" stop-color="#1f36e6"/>
+      <stop offset=".46" stop-color="#1f36e7"/>
+      <stop offset=".47" stop-color="#1f37e9"/>
+      <stop offset=".47" stop-color="#1f37ea"/>
+      <stop offset=".48" stop-color="#2038ec"/>
+      <stop offset=".48" stop-color="#2038ed"/>
+      <stop offset=".48" stop-color="#2038ef"/>
+      <stop offset=".49" stop-color="#2039f0"/>
+      <stop offset=".49" stop-color="#2139f1"/>
+      <stop offset=".5" stop-color="#213af3"/>
+      <stop offset=".5" stop-color="#213af4"/>
+      <stop offset=".5" stop-color="#213af6"/>
+      <stop offset=".51" stop-color="#223bf7"/>
+      <stop offset=".51" stop-color="#223bf9"/>
+      <stop offset=".52" stop-color="#223cfa"/>
+      <stop offset=".52" stop-color="#223cfb"/>
+      <stop offset=".52" stop-color="#233cfd"/>
+      <stop offset=".53" stop-color="#233dfe"/>
+      <stop offset=".53" stop-color="#233dff"/>
+      <stop offset=".56" stop-color="#233dff"/>
+      <stop offset=".62" stop-color="#233dff"/>
+      <stop offset=".66" stop-color="#233dff"/>
+      <stop offset=".75" stop-color="#233dff"/>
+      <stop offset="1" stop-color="#233dff"/>
+    </linearGradient>
+    <clipPath id="clippath-2">
+      <rect class="cls-2" x="33" y="121" width="13" height="3"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g class="cls-3">
+        <g class="cls-4">
+          <path class="cls-5" d="m0,0v131h156V0H0Z"/>
+        </g>
+      </g>
+      <path class="cls-6" d="m66.2,59.56c.55-.55,1.21-.83,1.98-.83s1.42.28,1.98.83c.55.54.83,1.2.83,1.96s-.28,1.43-.83,1.98c-.56.54-1.22.81-1.98.81s-1.43-.27-1.98-.81c-.54-.55-.81-1.21-.81-1.98s.27-1.42.81-1.96Zm-.2,7.44v14h5v-14h-5Z"/>
+      <path class="cls-6" d="m77,67v-5h5v5h2v4h-2v4.35c0,1.27.37,1.9,1.12,1.9.19,0,.39-.03.59-.1.2-.08.36-.16.48-.23l.15-.1,1.26,3.81c-1.07.57-2.3.85-3.68.85-.94,0-1.75-.16-2.42-.46-.68-.32-1.19-.73-1.54-1.25-.34-.53-.59-1.07-.75-1.65-.15-.58-.22-1.21-.22-1.88v-5.25h-2v-4h2Z"/>
+      <path class="cls-6" d="m89,67v-5h5v5h3v4h-3v4.35c0,1.27.37,1.9,1.12,1.9.19,0,.39-.03.59-.1.2-.08.36-.16.48-.23l.15-.1,1.26,3.81c-1.07.57-2.3.85-3.68.85-.94,0-1.75-.16-2.42-.46-.68-.32-1.19-.73-1.54-1.25-.34-.53-.59-1.07-.75-1.65-.15-.58-.22-1.21-.22-1.88v-5.25h-2v-4h2Z"/>
+      <path class="cls-6" d="m102.46,79.23c-1.52-1.34-2.27-3.07-2.27-5.19s.79-3.86,2.38-5.23c1.58-1.36,3.54-2.04,5.88-2.04s4.22.69,5.79,2.06c1.58,1.36,2.38,3.09,2.38,5.19s-.77,3.83-2.31,5.19c-1.54,1.36-3.49,2.04-5.85,2.04s-4.45-.67-5.98-2.02Zm3.67-7.52c-.61.6-.92,1.37-.92,2.31s.29,1.72.88,2.31c.59.6,1.38.9,2.33.9s1.67-.3,2.27-.9c.59-.61.9-1.38.9-2.31s-.31-1.71-.92-2.31c-.61-.61-1.36-.92-2.25-.92s-1.68.31-2.29.92Z"/>
+      <g class="cls-1">
+        <path class="cls-6" d="m34.98,120.66c-.92,0-1.66.74-1.66,1.66s.74,1.67,1.66,1.67,1.67-.74,1.67-1.67-.74-1.66-1.67-1.66Zm9.98,0c-.92,0-1.66.74-1.66,1.66s.74,1.67,1.66,1.67,1.67-.74,1.67-1.67-.74-1.66-1.67-1.66Zm-4.99,0c-.92,0-1.67.74-1.67,1.66s.74,1.67,1.67,1.67,1.66-.74,1.66-1.67-.74-1.66-1.66-1.66Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
