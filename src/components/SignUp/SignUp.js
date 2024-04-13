@@ -7,6 +7,7 @@ import logo from "./Asset_1.svg";
 import { useState, useEffect } from "react";
 import Cookies from "js-cookie";
 import { useLocation } from "react-router-dom";
+import Error from "../Error/Error";
 
 import "./SignUp.css";
 
@@ -14,6 +15,7 @@ export default function SignUp() {
   const navigate = useNavigate();
 
   const [error, setError] = useState("");
+  const [modal, setModal] = useState(false);
   const [loader, setLoader] = useState(false);
   const [details, setDetails] = useState({
     username: "",
@@ -48,6 +50,7 @@ export default function SignUp() {
     setDetails({ ...details, confirmPassword: event.target.value });
   };
   const onSubmit = async () => {
+    setModal(false);
     setLoader(true);
     if (bool === 2 && details.password !== details.confirmPassword) {
       setError("Password & Confirm Password are not matched");
@@ -63,32 +66,45 @@ export default function SignUp() {
       };
 
       if (bool === 1) {
-        const res = await fetch(
-          "https://ditto-server.onrender.com/login",
-          options
-        );
-        // const res = await fetch("http://localhost:3001/login", options);
-        const data = await res.json();
-        const { token } = data;
+        try {
+          const res = await fetch(
+            "https://ditto-server.onrender.com/login",
+            options
+          );
+          // const res = await fetch("http://localhost:3001/login", options);
+          const data = await res.json();
+          const { token } = data;
 
-        setLoader(false);
-        if (res.status === 200) {
-          setError("");
-          Cookies.set("token", token, { expires: 30 });
-          navigate("/feed", { replace: true });
-        } else {
-          setError(data.message);
+          setLoader(false);
+          if (res.status === 200) {
+            setError("");
+            Cookies.set("token", token, { expires: 30 });
+            navigate("/feed", { replace: true });
+          } else {
+            setError(data.message);
+          }
+        } catch (err) {
+          setModal(true);
+          setLoader(false);
+          console.log(err);
         }
       } else {
-        const res = await fetch(
-          "https://ditto-server.onrender.com/signup",
-          options
-        );
-        const data = await res.json();
+        try {
+          setModal(false);
+          const res = await fetch(
+            "https://ditto-server.onrender.com/signup",
+            options
+          );
+          const data = await res.json();
 
-        setLoader(false);
-        if (res.status === 200) {
-          navigate("/login", { replace: true });
+          setLoader(false);
+          if (res.status === 200) {
+            navigate("/login", { replace: true });
+          }
+        } catch (err) {
+          setLoader(false);
+          setModal(true);
+          console.log(err);
         }
       }
     }
@@ -197,6 +213,7 @@ export default function SignUp() {
           )}
         </div>
       </div>
+      {modal && <Error />}
     </div>
   );
 }
